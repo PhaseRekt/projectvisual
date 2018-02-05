@@ -1,6 +1,9 @@
-article {
+body > article:first-of-type {
     margin: 0 auto;
     max-width: 30em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 main {
@@ -9,17 +12,17 @@ main {
 }
 
 img {
-    width: 20em;
-    height: 20em;
+    width: 14em;
+    height: 14em;
     object-fit: cover;
     margin: auto;
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-img:first-of-type {
+body > article > img {
     border-radius: 50em;
 }
+
 
 h1,
 h2,
@@ -49,7 +52,8 @@ p {
 section > article > img {
     display: inline-block;
     height: 9em;
-    width: 9em;
+    width: 18em;
+    object-fit: cover;
     border-radius: none;
 }
 
@@ -62,6 +66,13 @@ section > article {
     max-width: 40em;
 }
 
+section > article > h2 {
+    margin: 1em auto .5em auto;
+}
+
+section > article > p {
+    margin-bottom: 6em;
+}
 
 @font-face {
     font-family: "heading";
