@@ -22,7 +22,8 @@ img:first-of-type {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: heading;
 }
 
@@ -31,9 +32,36 @@ h2 {
     margin-bottom: .5em;
 }
 
+h1 {
+    font-size: 8em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
 p {
     font-family: paragraph;
 }
+
+section > article > img {
+    display: inline-block;
+    height: 9em;
+    width: 9em;
+    border-radius: none;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 40em;
+}
+
+section > article {
+    max-width: 40em;
+}
+
 
 @font-face {
     font-family: "heading";
