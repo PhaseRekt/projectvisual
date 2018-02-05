@@ -1,0 +1,48 @@
+article {
+    margin: 0 auto;
+    max-width: 30em;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 40em;
+}
+
+img {
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+img:first-of-type {
+    border-radius: 50em;
+}
+
+h1,
+h2 {
+    font-family: heading;
+}
+
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+p {
+    font-family: paragraph;
+}
+
+@font-face {
+    font-family: "heading";
+    font-style: bold;
+    src: url("mermaid.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "paragraph";
+    font-style: normal;
+    src: url("Timeless.ttf") format("truetype");
+}
